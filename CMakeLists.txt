@@ -25,10 +25,15 @@ include_directories(${SNFrontEndElectronics_INCLUDE_DIRS})
 
 add_compile_options ( -Wall) 
 
-# - Executable:
 
+# LI system program
 add_executable(Li_system Li_system.cxx)
-
 target_link_libraries(Li_system SNFrontEndElectronics::snfee)
+
+
+# LI system program
+add_executable(charge_amplitude_energie charge_amplitude_energie.cxx)
+target_link_libraries(charge_amplitude_energie SNFrontEndElectronics::snfee)
+
 
 # end
